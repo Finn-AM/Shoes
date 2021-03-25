@@ -1,0 +1,68 @@
+@import './variables';
+
+.aboutContent {
+  @include parentLayout;
+  border: 2px solid red;
+  & h1 {
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+.associates {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+  grid-auto-rows: minmax(30px, auto);
+  gap: 10px;
+  grid-template-areas:
+    '.     .     idas  .     .     '
+    '.     conv  idas  vans  .     '
+    'gucc  conv  puma  vans  uarm  '
+    'gucc  asic  puma  nike  uarm  '
+    '.     asic  blan  nike  .     '
+    '.     .     blan  .     .     ';
+  div {
+    border-radius: 5px;
+  }
+  .adidas {
+    grid-area: idas;
+    background-color: $default;
+  }
+  .puma {
+    grid-area: puma;
+    background-color: $yellow;
+  }
+  .new-balance {
+    grid-area: blan;
+    background-color: $blue;
+  }
+  .converse {
+    grid-area: conv;
+    background-color: $black;
+  }
+  .asics {
+    grid-area: asic;
+    background-color: $black;
+  }
+  .gucci {
+    grid-area: gucc;
+    background-color: $black;
+  }
+  .vans {
+    grid-area: vans;
+    background-color: $black;
+  }
+
+  .nike {
+    grid-area: nike;
+    background-color: $black;
+  }
+  .under-armour {
+    grid-area: uarm;
+    background-color: $black;
+  }
+}

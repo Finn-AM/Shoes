@@ -1,0 +1,91 @@
+.header {
+  .navbar {
+    display: flex;
+    & a {
+      font-size: 1.5rem;
+    }
+  }
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+.main-text {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  margin-left: 3rem;
+  margin-top: 6rem;
+  h1 {
+    font-size: 3rem;
+  }
+  hr {
+    border: 3px solid $primary;
+  }
+  .btn {
+    height: 70px;
+    width: 200px;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    padding-bottom: 1rem;
+  }
+  p {
+    width: 90%;
+    text-align: left;
+  }
+}
+
+.grand-container {
+  position: absolute;
+  margin: 0;
+  right: 15%;
+  top: 20vh;
+  height: 300px;
+  width: 300px;
+}
+
+.btn-container {
+  .arrowUp {
+    height: 50px;
+    top: -310px;
+  }
+  .arrowDown {
+    height: 50px;
+  }
+}
+
+.helper {
+  height: 290px;
+  width: 290px;
+  left: -40px;
+  top: 40px;
+  &::before {
+    top: -10vh;
+    left: 90vw;
+    height: 170px;
+    width: 170px;
+  }
+  &::after {
+    height: 350px;
+    width: 350px;
+    left: 30vw;
+    top: 35vh;
+  }
+}
+
+.preview-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3.2rem;
+  width: 60%;
+  margin-left: auto;
+  div {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.grid-container {
+  width: 60%;
+}

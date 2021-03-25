@@ -1,0 +1,14 @@
+$default: rgb(224, 75, 214);
+$primary: rgb(128, 38, 199);
+$blue: rgb(40, 89, 202);
+$black: rgb(66, 65, 64);
+$yellow: rgb(187, 163, 127);
+
+@mixin parentLayout {
+  position: relative;
+  max-width: 1920px;
+  height: auto;
+  max-height: 1024px;
+  width: 100vw;
+  overflow: hidden;
+}
