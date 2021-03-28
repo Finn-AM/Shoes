@@ -1,18 +1,69 @@
-@import './variables';
-
 .aboutContent {
   @include parentLayout;
-  border: 2px solid red;
+  margin-top: 6rem;
   & h1 {
     text-align: center;
     font-weight: normal;
+  }
+  .about-sub-text {
+    text-align: center;
+    width: 80%;
+    margin: 1.5rem auto;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.25rem;
+    color: $primary;
+    letter-spacing: 6.5%;
+  }
+  hr {
+    @include underline;
+  }
+}
+
+.path {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  // overflow: hidden;
+  div {
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: none;
+
+    img {
+      height: 80px;
+      display: block;
+    }
+    p {
+      font-family: 'Lobster Two', cursive;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+  :nth-child(3),
+  :nth-child(4) {
+    border-top: none;
+  }
+  :nth-child(2),
+  :nth-child(4) {
+    border-right: none;
+  }
+}
+
+.associates-text {
+  margin: 1.5rem 0;
+  font-weight: 300;
+  hr {
+    width: 20%;
   }
 }
 
 .associates {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 60px);
   width: 80%;
   max-width: 1440px;
   margin: 0 auto;
@@ -27,42 +78,39 @@
     '.     .     blan  .     .     ';
   div {
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    img {
+      height: 40px;
+    }
   }
   .adidas {
     grid-area: idas;
-    background-color: $default;
   }
   .puma {
     grid-area: puma;
-    background-color: $yellow;
   }
   .new-balance {
     grid-area: blan;
-    background-color: $blue;
   }
   .converse {
     grid-area: conv;
-    background-color: $black;
   }
   .asics {
     grid-area: asic;
-    background-color: $black;
   }
   .gucci {
     grid-area: gucc;
-    background-color: $black;
   }
   .vans {
     grid-area: vans;
-    background-color: $black;
   }
-
   .nike {
     grid-area: nike;
-    background-color: $black;
   }
   .under-armour {
     grid-area: uarm;
-    background-color: $black;
   }
 }

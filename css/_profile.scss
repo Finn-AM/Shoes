@@ -1,0 +1,63 @@
+.company {
+  @include parentLayout;
+  h1 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 2rem;
+  }
+  hr {
+    @include underline;
+    margin-bottom: 2rem;
+    width: 25%;
+  }
+}
+
+.company-desc {
+  font-family: Arial;
+  h1 {
+    margin: 0;
+    font-family: 'Lobster two', cursive;
+  }
+  h3 {
+    margin-bottom: auto;
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+  div {
+    display: flex;
+    background-color: rgba(224, 75, 214, 0.208);
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+    div {
+      width: 50%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    width: 100%;
+    align-items: flex-end;
+    background-color: transparent;
+  }
+  button {
+    font-family: 'Lobster two', cursive;
+    cursor: pointer;
+    background-color: $primary;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+  }
+}

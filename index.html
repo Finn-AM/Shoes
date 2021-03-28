@@ -7,12 +7,16 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pacifico&family=Schoolbell&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lobster+Two&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+
     <!-- CSS & JS -->
     <link rel="stylesheet" href="./css__map/style.css" />
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="app.js" defer></script>
+    <script src="gsap.js" defer></script>
     <title>SuperShoes</title>
   </head>
   <main class="firstContent">
@@ -51,8 +55,8 @@
       <div class="layer"></div>
       <div class="layer2"></div>
       <div class="btn-container">
-        <img class="arrowUp prev" src="./icon/arrow.svg" alt="" />
-        <img class="arrowDown next" src="./icon/arrow.svg" alt="" />
+        <img class="arrowUp prev" src="./icon/arrow.svg" />
+        <img class="arrowDown next" src="./icon/arrow.svg" />
       </div>
     </div>
 
@@ -73,17 +77,136 @@
     <div class="helper"></div>
   </main>
   <main class="aboutContent">
-    <h1>Associate with</h1>
+    <h1>We Design Your Experience</h1>
+    <hr />
+
+    <p class="about-sub-text">
+      Not just design a shoes, we also design the experience. We believe user’s
+      feeling should be better than the design.
+    </p>
+    <div class="path">
+      <div class="">
+        <p>Ideas</p>
+        <img src="./icon/ideas.svg" alt="" />
+        <p>Design</p>
+      </div>
+      <div class="">
+        <p>Development</p>
+        <img src="./icon/development.svg" alt="" />
+        <p>Testing</p>
+      </div>
+      <div class="">
+        <p>Error</p>
+        <img src="./icon/critique.svg" alt="" />
+        <p>Critique</p>
+      </div>
+      <div class="">
+        <p>Deploy</p>
+        <img src="./icon/success.svg" alt="" />
+        <p>Success</p>
+      </div>
+    </div>
+    <h1 class="associates-text">
+      Associate with
+      <hr />
+    </h1>
     <section class="associates">
-      <div class="adidas"></div>
-      <div class="puma"></div>
-      <div class="new-balance"></div>
-      <div class="converse"></div>
-      <div class="asics"></div>
-      <div class="gucci"></div>
-      <div class="vans"></div>
-      <div class="nike"></div>
-      <div class="under-armour"></div>
+      <div class="adidas">
+        <img src="./" alt="" />
+        <img src="./images/Associates/adidas.png" />
+      </div>
+      <div class="puma">
+        <img src="./images/Associates/puma.png" />
+      </div>
+      <div class="new-balance">
+        <img src="./images/Associates/New-balance.png" />
+      </div>
+      <div class="converse">
+        <img src="./images/Associates/Converse.png" />
+      </div>
+      <div class="asics">
+        <img src="./images/Associates/Asics.png" />
+      </div>
+      <div class="gucci">
+        <img src="./images/Associates/Gucci.png" />
+      </div>
+      <div class="vans">
+        <img src="./images/Associates/Vans.png" />
+      </div>
+      <div class="nike">
+        <img src="./images/Associates/Nike.png" />
+      </div>
+      <div class="under-armour">
+        <img src="./images/Associates/Under-armour.png" />
+      </div>
     </section>
   </main>
+  <main class="company">
+    <h1>Who are you?</h1>
+    <hr />
+    <section class="company-desc">
+      <!-- company 1 -->
+      <div>
+        <div class="detail">
+          <h1>Business owner</h1>
+          <hr />
+          <h3>Interest to work with us?</h3>
+          <button>Contact Us</button>
+        </div>
+        <div><img src="./images/business.jpg" /></div>
+      </div>
+      <!-- company 2 -->
+      <div>
+        <div class="detail">
+          <h1>Vip Clients</h1>
+          <hr />
+          <h3>Custom your shoes now, be different!</h3>
+          <button>Contact Us</button>
+        </div>
+        <div><img src="./images/vip.jpg" alt="" /></div>
+      </div>
+      <!-- company 3 -->
+      <div>
+        <div class="detail">
+          <h1>Clients and fans</h1>
+          <hr />
+          <h3>Our ears always open to critique for improvement.</h3>
+          <div class="contact">
+            <button>Contact Us</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div><img src="./images//clients.jpg" alt="" /></div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <h2>&copy; Designed and Coded by Finn</h2>
+    <div class="wadaw">
+      <div class="">
+        <h3>Disclaimer</h3>
+        <p>Just a landing page Demo for shoe company.</p>
+      </div>
+      <div class="">
+        <h3>Address</h3>
+        <p>
+          Gotham city <br />
+          21 Lorem st. <br />
+          Studio 9, 14th floor
+        </p>
+      </div>
+      <div class="">
+        <h3>Come join us</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+
+    <a href="https://www.instagram.com/finn_ahamed/" target="_blank">
+      <img src="./icon/instagram.svg" alt="" />
+    </a>
+    <a href="https://github.com/Finn-AM" target="_blank">
+      <img src="./icon/github.svg" alt="" />
+    </a>
+  </footer>
 </html>

@@ -12,3 +12,10 @@ $yellow: rgb(187, 163, 127);
   width: 100vw;
   overflow: hidden;
 }
+
+@mixin underline {
+  width: 50%;
+  border: 2px solid rebeccapurple;
+  margin: 0 auto;
+  margin-top: 0.15rem;
+}

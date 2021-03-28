@@ -5,6 +5,7 @@ let counter = 0;
 let layer1 = document.querySelector('.layer');
 let layer2 = document.querySelector('.layer2');
 let preview = Array.from(document.querySelectorAll('.preview'));
+let associates = document.querySelectorAll('.associates div');
 
 next.addEventListener('click', () => {
   counter++;
@@ -59,24 +60,12 @@ let shoeLayer = [
 function layerChange() {
   preview.forEach((prev, i) => {
     prev.classList.add('fade');
-    if (counter === 1) {
-      layer1.style.backgroundColor = shoeLayer[1].layer1;
-      layer2.style.backgroundColor = shoeLayer[1].layer2;
-      preview[1].classList.remove('fade');
-    } else if (counter === 2) {
-      layer1.style.backgroundColor = shoeLayer[2].layer1;
-      layer2.style.backgroundColor = shoeLayer[2].layer2;
-      preview[2].classList.remove('fade');
-    } else if (counter === 3) {
-      layer1.style.backgroundColor = shoeLayer[3].layer1;
-      layer2.style.backgroundColor = shoeLayer[3].layer2;
-      preview[3].classList.remove('fade');
-    } else {
-      layer1.style.backgroundColor = shoeLayer[0].layer1;
-      layer2.style.backgroundColor = shoeLayer[0].layer2;
-      preview[0].classList.remove('fade');
-    }
+    layer1.style.backgroundColor = shoeLayer[counter].layer1;
+    layer2.style.backgroundColor = shoeLayer[counter].layer2;
   });
+
+  preview[counter].classList.remove('fade');
+  associatesColor();
 }
 
 preview.forEach((prev, prevIndex) => {
@@ -88,3 +77,10 @@ preview.forEach((prev, prevIndex) => {
     });
   });
 });
+
+function associatesColor() {
+  associates.forEach((associate) => {
+    associate.style.backgroundColor = shoeLayer[counter].layer2;
+  });
+}
+associatesColor();
