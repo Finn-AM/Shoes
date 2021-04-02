@@ -13,6 +13,10 @@
 }
 
 .company-desc {
+  div {
+    opacity: 0;
+    transform: translateY(100px);
+  }
   font-family: Arial;
   h1 {
     margin: 0;
