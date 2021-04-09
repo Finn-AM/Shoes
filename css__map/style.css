@@ -115,10 +115,14 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .associates div img {
   height: 40px;
+  pointer-events: none;
+  cursor: none;
 }
 
 .associates .adidas {

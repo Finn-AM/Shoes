@@ -82,8 +82,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    cursor: grab;
     img {
       height: 40px;
+      pointer-events: none;
+      cursor: none;
     }
   }
   .adidas {
